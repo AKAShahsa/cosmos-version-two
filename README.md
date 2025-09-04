@@ -1,1 +1,1 @@
-# cosmos-version-two
+# cosmos-music

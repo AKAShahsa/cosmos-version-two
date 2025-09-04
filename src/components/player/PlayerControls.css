@@ -1,0 +1,70 @@
+/* Custom slider styles for PlayerControls */
+.slider {
+  background: #374151;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #8b5cf6;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  border: 2px solid #fff;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #8b5cf6;
+  cursor: pointer;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.slider::-webkit-slider-track {
+  background: #374151;
+  border-radius: 4px;
+  height: 8px;
+}
+
+.slider::-moz-range-track {
+  background: #374151;
+  border-radius: 4px;
+  height: 8px;
+  border: none;
+}
+
+/* Mobile touch improvements */
+@media (max-width: 768px) {
+  .slider::-webkit-slider-thumb {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .slider::-webkit-slider-track {
+    height: 10px;
+  }
+  
+  .slider::-moz-range-track {
+    height: 10px;
+  }
+}
